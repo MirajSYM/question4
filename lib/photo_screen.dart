@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class PhotoScreen extends StatelessWidget {
+  final String url;
+
+  PhotoScreen({this.url});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,7 +11,7 @@ class PhotoScreen extends StatelessWidget {
       child: Container(
         width: double.maxFinite,
         child: Image.network(
-          'http://gmm.fc.utm.my/~jumail/photos/photo4.jpg',
+          url,
           fit: BoxFit.fitWidth,
         ),
       ),
