@@ -14,7 +14,7 @@ class RestService {
   // Don't use https for local JSON-Server
   // Make sure you specify the port number 3000
 
-  static const String baseUrl = 'http://192.168.0.3:3000';
+  static const String baseUrl = 'http://192.168.137.1:3000';
 
   Future get(String endpoint) async {
     final response = await http.get('$baseUrl/$endpoint');
